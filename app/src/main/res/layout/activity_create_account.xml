@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#EDE7F6">
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create a new account"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvCreateAccount"
+        android:layout_marginTop="16dp"
+        android:hint="Full Name"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textPersonName"
+        android:autofillHints="name"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etFullName"
+        android:layout_marginTop="8dp"
+        android:hint="Mobile No."
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="phone"
+        android:autofillHints="phone"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/etStudentId"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etMobileNo"
+        android:layout_marginTop="8dp"
+        android:hint="Student ID"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="text"
+        android:autofillHints="username"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/etSchoolEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etStudentId"
+        android:layout_marginTop="8dp"
+        android:hint="School Email"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/etDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etSchoolEmail"
+        android:layout_marginTop="8dp"
+        android:hint="Department"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="text"
+        android:autofillHints="username"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etDepartment"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/edit_text_background" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="16dp"
+        android:text="Next"
+        android:backgroundTint="#9575CD"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Have an account? Sign in here."
+        android:textColor="#1E88E5"
+        android:textSize="14sp" />
+</RelativeLayout>

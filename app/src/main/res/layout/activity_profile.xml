@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_profile_placeholder"
+        android:contentDescription="Profile Image"
+        android:layout_marginTop="32dp"
+        android:background="#CCCCCC" />
+
+    <TextView
+        android:id="@+id/tvViewSelfie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="View provided selfie"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvViewSelfie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Lorem Bartolome"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStudentIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginTop="16dp"
+        android:text="Student ID:"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvStudentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvStudentIdLabel"
+        android:layout_alignBaseline="@id/tvStudentIdLabel"
+        android:layout_marginStart="8dp"
+        android:text="2022-123456"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvMobileNoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStudentIdLabel"
+        android:layout_marginTop="8dp"
+        android:text="Mobile No.:"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvMobileNoLabel"
+        android:layout_alignBaseline="@id/tvMobileNoLabel"
+        android:layout_marginStart="8dp"
+        android:text="+63 912 453 7890"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvSchoolEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMobileNoLabel"
+        android:layout_marginTop="8dp"
+        android:text="School email:"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvSchoolEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvSchoolEmailLabel"
+        android:layout_alignBaseline="@id/tvSchoolEmailLabel"
+        android:layout_marginStart="8dp"
+        android:text="loremb@school.com"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvDepartmentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSchoolEmailLabel"
+        android:layout_marginTop="8dp"
+        android:text="Department:"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvDepartmentLabel"
+        android:layout_alignBaseline="@id/tvDepartmentLabel"
+        android:layout_marginStart="8dp"
+        android:text="SECA – School of Engineering, Computing, and Architecture"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDepartmentLabel"
+        android:layout_marginTop="32dp"
+        android:text="Log Out"
+        android:backgroundTint="#9575CD"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

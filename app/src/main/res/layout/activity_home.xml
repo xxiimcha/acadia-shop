@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi Lorem,"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_profile_placeholder"
+        android:contentDescription="Profile Icon" />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginTop="16dp"
+        android:hint="Search"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/edit_text_background" />
+
+    <TextView
+        android:id="@+id/tvCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchBar"
+        android:layout_marginTop="16dp"
+        android:text="Categories:"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCategories"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:backgroundTint="#9575CD"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnClothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clothes"
+                android:layout_marginStart="8dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnAccessories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accessories"
+                android:layout_marginStart="8dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:layout_marginStart="8dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCategories"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="56dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription="Home Icon" />
+
+        <ImageView
+            android:id="@+id/addIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription="Add Icon" />
+
+        <ImageView
+            android:id="@+id/notificationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notifications"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription="Notifications Icon" />
+    </LinearLayout>
+
+</RelativeLayout>
