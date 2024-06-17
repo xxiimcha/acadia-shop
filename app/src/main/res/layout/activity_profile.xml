@@ -33,7 +33,6 @@
         android:layout_below="@id/tvViewSelfie"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Lorem Bartolome"
         android:textSize="20sp"
         android:textColor="#000000"
         android:textStyle="bold" />
@@ -55,7 +54,6 @@
         android:layout_toEndOf="@id/tvStudentIdLabel"
         android:layout_alignBaseline="@id/tvStudentIdLabel"
         android:layout_marginStart="8dp"
-        android:text="2022-123456"
         android:textSize="16sp"
         android:textColor="#000000" />
 
@@ -76,7 +74,6 @@
         android:layout_toEndOf="@id/tvMobileNoLabel"
         android:layout_alignBaseline="@id/tvMobileNoLabel"
         android:layout_marginStart="8dp"
-        android:text="+63 912 453 7890"
         android:textSize="16sp"
         android:textColor="#000000" />
 
@@ -97,7 +94,6 @@
         android:layout_toEndOf="@id/tvSchoolEmailLabel"
         android:layout_alignBaseline="@id/tvSchoolEmailLabel"
         android:layout_marginStart="8dp"
-        android:text="loremb@school.com"
         android:textSize="16sp"
         android:textColor="#000000" />
 
@@ -118,7 +114,6 @@
         android:layout_toEndOf="@id/tvDepartmentLabel"
         android:layout_alignBaseline="@id/tvDepartmentLabel"
         android:layout_marginStart="8dp"
-        android:text="SECA – School of Engineering, Computing, and Architecture"
         android:textSize="16sp"
         android:textColor="#000000" />
 

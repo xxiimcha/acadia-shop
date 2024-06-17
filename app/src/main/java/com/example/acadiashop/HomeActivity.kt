@@ -2,10 +2,16 @@ package com.example.acadiashop
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
+import android.util.Log
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import org.json.JSONArray
+import org.json.JSONObject
+import kotlin.concurrent.thread
+import android.widget.ImageView
 
 class HomeActivity : AppCompatActivity() {
 
@@ -13,33 +19,23 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val rvProducts: RecyclerView = findViewById(R.id.rvProducts)
-        rvProducts.layoutManager = LinearLayoutManager(this)
-
-        // Set up the adapter for RecyclerView (Assuming ProductAdapter is already created)
-        // rvProducts.adapter = ProductAdapter(productList)
+        val userName = intent.getStringExtra("userName")
+        val userId = intent.getStringExtra("userId")
+        val tvUserName: TextView = findViewById(R.id.tvUserName)
+        tvUserName.text = "Hi $userName,"
 
         val profileIcon: ImageView = findViewById(R.id.profileIcon)
         profileIcon.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
+            intent.putExtra("userId", userId) // Passing the userId to ProfileActivity
             startActivity(intent)
         }
 
-        // Optionally handle other icon clicks
-        val homeIcon: ImageView = findViewById(R.id.homeIcon)
         val addIcon: ImageView = findViewById(R.id.addIcon)
-        val notificationIcon: ImageView = findViewById(R.id.notificationIcon)
-
-        homeIcon.setOnClickListener {
-        }
-
         addIcon.setOnClickListener {
             val intent = Intent(this, CreatePostActivity::class.java)
             startActivity(intent)
         }
-
-        notificationIcon.setOnClickListener {
-            // Handle notification icon click
-        }
     }
+
 }
