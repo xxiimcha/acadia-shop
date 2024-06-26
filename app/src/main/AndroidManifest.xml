@@ -21,21 +21,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AcadiaShop"
         tools:targetApi="31">
-
-        <!-- Other activities -->
-        <activity android:name=".HomeActivity" android:exported="false"/>
-        <activity android:name=".SignInActivity" android:exported="false"/>
-        <activity android:name=".SplashActivity" android:exported="true" android:label="@string/app_name" android:theme="@style/Theme.AcadiaShop">
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" /> <!-- Other activities -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AcadiaShop">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateAccountActivity" android:exported="false"/>
-        <activity android:name=".VerificationActivity" android:exported="false"/>
-        <activity android:name=".WaitForApprovalActivity" android:exported="false"/>
-        <activity android:name=".ProfileActivity" android:exported="false"/>
-        <activity android:name=".CreatePostActivity" android:exported="false"/>
-        <activity android:name=".TestConnectionActivity" android:exported="false"/>
+        <activity
+            android:name=".CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaitForApprovalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreatePostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestConnectionActivity"
+            android:exported="false" />
     </application>
+
 </manifest>

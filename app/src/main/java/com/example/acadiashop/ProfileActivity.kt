@@ -1,14 +1,15 @@
 package com.example.acadiashop
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
 import kotlin.concurrent.thread
-import android.widget.Toast
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -36,8 +37,7 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         btnLogOut.setOnClickListener {
-            // Handle logout
-            finish()
+            handleLogout()
         }
 
         profileImage.setOnClickListener {
@@ -80,5 +80,15 @@ class ProfileActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun handleLogout() {
+        // Clear shared preferences or any stored user data here if necessary
+
+        // For demonstration, we just navigate back to the main activity (assuming it's the login screen)
+        val intent = Intent(this, SignInActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+        finish()
     }
 }

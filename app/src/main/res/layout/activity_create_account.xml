@@ -68,9 +68,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etPassword"
-        android:layout_marginTop="16dp"
-        android:text="Register"
+        android:layout_marginTop="156dp"
         android:backgroundTint="#9575CD"
+        android:text="Register"
         android:textColor="#FFFFFF" />
 
 </RelativeLayout>

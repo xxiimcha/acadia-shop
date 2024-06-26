@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Order Preview Image -->
+    <ImageView
+        android:id="@+id/ivOrderPreviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Order Preview Name -->
+    <TextView
+        android:id="@+id/tvOrderPreviewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivOrderPreviewImage"
+        android:layout_marginTop="16dp"
+        android:text="Product Name"
+        android:textSize="24sp"
+        android:textColor="#000000" />
+
+    <!-- Order Preview Price -->
+    <TextView
+        android:id="@+id/tvOrderPreviewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOrderPreviewName"
+        android:layout_marginTop="8dp"
+        android:text="₱0.00"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+    <!-- Order Preview Quantity -->
+    <TextView
+        android:id="@+id/tvOrderPreviewQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOrderPreviewPrice"
+        android:layout_marginTop="8dp"
+        android:text="Quantity: 1"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Order Preview Meetup -->
+    <TextView
+        android:id="@+id/tvOrderPreviewMeetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOrderPreviewQuantity"
+        android:layout_marginTop="8dp"
+        android:text="Meetup: "
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Confirm Order Button -->
+    <Button
+        android:id="@+id/btnConfirmOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOrderPreviewMeetup"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm Order"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#9575CD" />
+
+</RelativeLayout>

@@ -8,6 +8,6 @@ data class Product(
     val image: String,
     val description: String,
     val quantity: Int
-    //val sellerName: String
+    // Uncomment the line below if sellerName is needed
+    // val sellerName: String
 )
-

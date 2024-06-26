@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AcadiaShop</string>
+    <string-array name="category_array">
+        <item>Clothes</item>
+        <item>Accessories</item>
+        <item>Foods</item>
+    </string-array>
 </resources>
